@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
             balance = amount;
             chrome.storage.sync.set({ balance: balance });
             updateDisplay();
-            addBalanceInput.value = '';
+            addBalanceInput.value = '0';
         }
     }
 
@@ -104,8 +104,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function clearInputs() {
         slotNameInput.value = '';
-        purchaseAmountInput.value = '';
-        winAmountInput.value = '';
+        purchaseAmountInput.value = '0';
+        winAmountInput.value = '0';
         playedCheckbox.checked = false;
         addSlotButton.textContent = 'Add Slot';
     }
