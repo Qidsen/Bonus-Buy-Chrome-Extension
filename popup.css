@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(to bottom, #1a1e36, #282f4e);
+    color: #d1d1d1;
+}
+
+h2 {
+    color: #e0e0e0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input, button, select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #3a4265;
+    border-radius: 5px;
+    background-color: #282f4e;
+    color: #d1d1d1;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4a90e2;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #357abd;
+}
+
+.container {
+    display: flex;
+    width: 600px;
+    margin: 20px auto;
+    background-color: #282f4e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.left-container {
+    width: 70%;
+    padding-right: 20px;
+}
+
+.info-container {
+    margin-bottom: 20px;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.info-item {
+    text-align: center;
+}
+
+.icon {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.slot-list {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.slot-form {
+    width: 30%;
+    padding-left: 20px;
+    border-left: 1px solid #3a4265;
+}
+
+.add-balance {
+    margin-bottom: 20px;
+}
+
+.add-balance input {
+    margin-bottom: 10px;
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+}
+
+.form-group-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.played-container {
+    display: flex;
+    align-items: center;
+}
+
+.played-container input {
+    width: auto;
+    margin-left: 10px;
+}
+
+.slotItem {
+    border: 1px solid #3a4265;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e233c;
+    border-radius: 5px;
+}
+
+.slotItem.played {
+    background-color: #3a4265;
+}
+
+.slotItem img {
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.positive {
+    color: #4caf50;
+}
+
+.negative {
+    color: #f44336;
+}
+
+.navigation {
+    display: flex;
+    justify-content: left; /* Изменяем на left, чтобы кнопки были слева */
+    margin-bottom: 20px;
+    background-color: #1e233c; /* Добавляем фон для навигации */
+    padding: 10px; /* Добавляем отступы для навигации */
+    border-radius: 5px; /* Добавляем скругление углов */
+}
+
+.navigation button {
+    padding: 8px 15px; /* Уменьшаем отступы */
+    margin: 0 5px; /* Уменьшаем отступы между кнопками */
+    background-color: transparent; /* Делаем фон прозрачным */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 14px; /* Уменьшаем размер шрифта */
+    border-radius: 3px; /* Добавляем скругление углов */
+}
+
+.navigation button.active {
+    background-color: #357abd; /* Цвет активной кнопки */
+}
+
+.page {
+    display: block;
+}
+
+#saveHistoryButton {
+    width: calc(100% - 40px);
+    display: block;
+    margin: 20px auto;
+    padding: 10px 40px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#historyList {
+    width: 600px;
+    margin-top: 20px;
+}
+
+.historyItem {
+    text-align: center;
+    border: 1px solid #3a4265;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #1e233c;
+    border-radius: 5px;
+}
+
+.historyItem .left-container {
+    width: 100%;
+}
+
+.history-navigation {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.history-navigation button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.history-navigation button:disabled {
+    background-color: #ccc;
+    cursor: default;
+}

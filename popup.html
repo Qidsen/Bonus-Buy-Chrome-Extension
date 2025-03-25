@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bonus Calculator</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<div class="navigation">
+    <button id="mainPageButton" class="active">Home</button>
+    <button id="historyPageButton">History</button>
+</div>
+<div id="mainPage" class="page">
+    <div class="container">
+        <div class="left-container">
+            <div class="info-container">
+                <div class="info-row">
+                    <div class="info-item">
+                        <span class="icon">&#x1F4B0;</span><p><span id="displayBalance">0</span>&#8372;</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">&#x274C;</span><p><span id="averageX">0</span></p>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">&#x1F4C8;</span><p><span id="requiredAverageX">0</span></p>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">&#x1F4DD;</span><p><span id="slotCount">0/0</span></p>
+                    </div>
+                </div>
+            </div>
+            <div id="slotList" class="slot-list">
+                <h2>Slot List</h2>
+                <div id="slots"></div>
+            </div>
+        </div>
+        <div id="slotForm" class="slot-form">
+            <div class="add-balance">
+                <h2>Add Balance</h2>
+                <div class="form-group">
+                    <label for="addBalance">Amount:</label>
+                    <input type="number" id="addBalance" value="0">
+                </div>
+                <button id="addBalanceButton">Add</button>
+            </div>
+            <h2>Add/Edit Slot</h2>
+            <div class="form-inputs">
+                <input type="hidden" id="slotIndex">
+                <div class="form-group">
+                    <label for="slotName">Slot Name:</label>
+                    <input type="text" id="slotName">
+                </div>
+                <div class="form-group">
+                    <label for="purchaseAmount">Purchase Amount:</label>
+                    <input type="number" id="purchaseAmount" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="winAmount">Win Amount:</label>
+                    <input type="number" id="winAmount" value="0">
+                </div>
+                <div class="form-group-checkbox">
+                    <label for="played">Played:</label>
+                    <div class="played-container">
+                        <input type="checkbox" id="played">
+                    </div>
+                </div>
+                <button id="addSlot">Add Slot</button>
+            </div>
+        </div>
+    </div>
+    <button id="saveHistoryButton">Save History</button>
+</div>
+<div id="historyPage" class="page" style="display: none;">
+    <div id="historyList"></div>
+    <div class="history-navigation">
+        <button id="prevHistory" disabled>&lt;</button>
+        <button id="nextHistory">&gt;</button>
+    </div>
+</div>
+<script src="popup.js"></script>
+</body>
+</html>
